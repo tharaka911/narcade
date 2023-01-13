@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [{path:'',redirectTo:'/process',pathMatch:'full'},
+const routes: Routes = [{path:'',redirectTo:'/process/landing',pathMatch:'full'},
   { path: 'process', loadChildren: () => import('./modules/process/process.module').then(m => m.ProcessModule) },
   { path: 'console', loadChildren: () => import('./modules/console/console.module').then(m => m.ConsoleModule) },
   { path: 'security', loadChildren: () => import('./modules/security/security.module').then(m => m.SecurityModule) },
