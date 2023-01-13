@@ -6,19 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
+  z-index: 100;
 }
-.access-control-button{
-  padding: 8px 20px;
-  background-color: var(--orange-color);
-  border: none;
-  border-radius: 50px;
-  color: var(--white-color);
-  margin-left:15px;
 
-
+.sing-up-link{
+  margin-right: 20px;
+  margin-left: 20px;
+  color: white !important;
 }
-a{
-  color: white;
-  text-decoration: none;
-
+.profile-button{
+  color: white !important;
 }

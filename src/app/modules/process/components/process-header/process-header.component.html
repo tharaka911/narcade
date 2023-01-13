@@ -1,9 +1,19 @@
 <div class="main-outer">
-  <a href="">Profile</a>
-  &nbsp;
-  &nbsp;
-  <a href="">Sign up</a>
-  <button class="access-control-button">
-    Access Console
-  </button>
+
+  <button class="profile-button" mat-button [matMenuTriggerFor]="menu">Profile</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>shopping_bag</mat-icon>
+      <span>Orders</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>manage_accounts</mat-icon>
+      <span>My Account</span>
+    </button>
+  </mat-menu>
+
+  <button routerLink="/security/login" class="sing-up-link" mat-button>Login</button>
+
+  <button routerLink="/console/playground/product/new" mat-raised-button color="primary">Access Console </button>
+
 </div>
