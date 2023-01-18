@@ -13,6 +13,9 @@ import {
 import { MainConsoleHeaderComponent } from './components/main-console-header/main-console-header.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatButtonModule} from "@angular/material/button";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import {MatButtonModule} from "@angular/material/button";
     CommonModule,
     ConsoleRoutingModule,
     MatTabsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ]
 })
 export class ConsoleModule {
